@@ -1,8 +1,10 @@
 import pygame
+import word
+import display
 
 pygame.init()
 
-WIDTH, HEIGHT = 800, 800
+WIDTH, HEIGHT = 600, 400
 
 WIN = pygame.display.set_mode((WIDTH, HEIGHT)) # instatiate pygame surface
 
@@ -11,7 +13,7 @@ pygame.display.set_caption("Hangman")
 
 FONT = pygame.font.SysFont("comicsans", 16)
 
-bg = pygame.image.load("images/hm_0.png").convert()
+bg = pygame.image.load("images/hm_6.png").convert()
 
 
 def main():
@@ -21,7 +23,7 @@ def main():
     while run:
         WIN.fill((0,0,0))
 
-        WIN.blit(bg, (0, 0))
+        WIN.blit(bg, (170, 80))
 
         for event in pygame.event.get():
 
