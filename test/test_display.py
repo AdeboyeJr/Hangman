@@ -2,4 +2,4 @@ from display import View
 
 def test_render():
 
-    assert
+    assert True
