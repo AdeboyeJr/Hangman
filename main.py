@@ -11,6 +11,8 @@ pygame.display.set_caption("Hangman")
 
 FONT = pygame.font.SysFont("comicsans", 16)
 
+bg = pygame.image.load("images/hm_0.png").convert()
+
 
 def main():
 
@@ -19,13 +21,13 @@ def main():
     while run:
         WIN.fill((0,0,0))
 
-        # WIN.blit(bg, (0, 0))
+        WIN.blit(bg, (0, 0))
 
         for event in pygame.event.get():
 
             if event.type == pygame.QUIT:
                 run = False
-                
+
         pygame.display.update()
 
     pygame.quit()
