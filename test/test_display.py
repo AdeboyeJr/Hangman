@@ -1,5 +1,13 @@
 from display import View
 
-def test_render():
+def test_view_init():
 
-    assert True
+    view = View("images/hm_0.png")
+
+    assert view is not None
+
+
+def test_view_render():
+    pass
+
+    

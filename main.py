@@ -1,10 +1,10 @@
 import pygame
 import word
-import display
+from display import View
 
 pygame.init()
 
-WIDTH, HEIGHT = 600, 400
+WIDTH, HEIGHT = 600, 600
 
 WIN = pygame.display.set_mode((WIDTH, HEIGHT)) # instatiate pygame surface
 
@@ -23,7 +23,7 @@ def main():
     while run:
         WIN.fill((0,0,0))
 
-        WIN.blit(bg, (170, 80))
+        WIN.blit(bg, ((WIDTH/2) - 100, (HEIGHT/2) - 100))
 
         for event in pygame.event.get():
 
